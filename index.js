@@ -16,5 +16,5 @@ app.get('/', (req, res) => {
 //     res.status(200).json({info: num})
 // })
 
-
-app.listen(3009, console.log('server started'))
+const port = process.env.PORT || 3000;
+app.listen(port, "0.0.0.0", console.log('server started'))
